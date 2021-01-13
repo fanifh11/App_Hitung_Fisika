@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#baffff"
+        >
+
+        <LinearLayout
+            android:id="@+id/linNamaApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#00838f"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="30dp">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="170dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/menu1" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="Perhitungan Fisika"
+                        android:textColor="#fff"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardBackgroundColor="#00838f"
+                    app:cardCornerRadius="20dp"
+                    android:padding="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Daftar Menu"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        android:textColor="#fff"
+                        android:layout_margin="15dp"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="15dp"
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/linBts1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="50dp"
+                                android:layout_marginTop="40dp"
+                                android:layout_marginRight="50dp"
+                                android:layout_marginBottom="20dp"
+                                android:focusable="true"
+                                app:cardBackgroundColor="#ffba3b"
+                                app:cardCornerRadius="40dp"
+                                android:onClick="gayadanberat"
+
+                                >
+
+                                <LinearLayout
+                                    android:id="@+id/linMenu1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/imageView2"
+                                        android:layout_width="20dp"
+                                        android:layout_height="70dp"
+                                        android:layout_margin="10dp"
+                                        android:layout_weight="1"
+                                        app:srcCompat="@drawable/menu3" />
+
+                                    <TextView
+                                        android:id="@+id/textView6"
+                                        android:layout_width="100dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:fontFamily="sans-serif-medium"
+                                        android:text="Gaya dan Berat"
+                                        android:textColor="#fff"
+                                        android:textSize="20dp" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linBts2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="50dp"
+                                android:layout_marginRight="50dp"
+                                android:layout_marginBottom="20dp"
+                                android:clickable="true"
+                                app:cardBackgroundColor="#30d6ff"
+                                app:cardCornerRadius="40dp"
+                                android:onClick="gotoMenuPilTekanan"
+                                >
+
+                                <LinearLayout
+                                    android:id="@+id/linMenu2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/imageView4"
+                                        android:layout_width="20dp"
+                                        android:layout_height="70dp"
+                                        android:layout_margin="10dp"
+                                        android:layout_weight="1"
+                                        app:srcCompat="@drawable/menu2" />
+
+                                    <TextView
+                                        android:id="@+id/textView8"
+                                        android:layout_width="100dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:fontFamily="sans-serif-medium"
+                                        android:text="Tekanan Zat"
+                                        android:textColor="#fff"
+                                        android:textSize="20dp" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linBts3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            >
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:cardBackgroundColor="#30e33b"
+                                android:layout_marginRight="50dp"
+                                android:layout_marginLeft="50dp"
+                                android:layout_marginBottom="20dp"
+                                app:cardCornerRadius="40dp"
+                                android:onClick="gotoMenuPilUsaha"
+                                >
+
+                                <LinearLayout
+                                    android:id="@+id/linMenu3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/imageView6"
+                                        android:layout_width="20dp"
+                                        android:layout_height="70dp"
+                                        android:layout_margin="10dp"
+                                        android:layout_weight="1"
+                                        app:srcCompat="@drawable/force" />
+
+                                    <TextView
+                                        android:id="@+id/textView11"
+                                        android:layout_width="120dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:fontFamily="sans-serif-medium"
+                                        android:text="Usaha dan Energi"
+                                        android:textColor="#fff"
+                                        android:textSize="20dp"
+                                        />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linBts4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:cardBackgroundColor="#ff9999"
+                                android:layout_marginRight="50dp"
+                                android:layout_marginLeft="50dp"
+                                android:layout_marginBottom="20dp"
+                                app:cardCornerRadius="40dp"
+                                android:onClick="hitungGLB"
+                                >
+
+                                <LinearLayout
+                                    android:id="@+id/linMenu4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/imageView7"
+                                        android:layout_width="20dp"
+                                        android:layout_height="70dp"
+                                        android:layout_margin="10dp"
+                                        android:layout_weight="1"
+                                        app:srcCompat="@drawable/menu4" />
+
+                                    <TextView
+                                        android:id="@+id/textView12"
+                                        android:layout_width="100dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:fontFamily="sans-serif-medium"
+                                        android:text="Gerak Lurus Beraturan"
+                                        android:textSize="20dp"
+                                        android:textColor="#fff"
+                                        />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <LinearLayout
+                                android:id="@+id/linBts5"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+
+                                >
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:cardBackgroundColor="#f696ff"
+                                    android:layout_marginRight="50dp"
+                                    android:layout_marginLeft="50dp"
+                                    android:layout_marginBottom="20dp"
+                                    app:cardCornerRadius="40dp"
+                                    android:onClick="hitungGLBB"
+                                    >
+
+                                    <LinearLayout
+                                        android:id="@+id/linMenu5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:id="@+id/imageView8"
+                                            android:layout_width="20dp"
+                                            android:layout_height="70dp"
+                                            android:layout_margin="10dp"
+                                            android:layout_weight="1"
+                                            app:srcCompat="@drawable/menu5" />
+
+                                        <TextView
+                                            android:id="@+id/textView13"
+                                            android:layout_width="100dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1"
+                                            android:fontFamily="sans-serif-medium"
+                                            android:text="Gerak Lurus Berubah Beraturan"
+                                            android:textColor="#fff"
+                                            android:textSize="20dp" />
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linPemilik"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardBackgroundColor="#00838f"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/txtNama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Created By Fani Fadillah Hermawan"
+                        android:textAlignment="center"
+
+                        android:textColor="#ffff" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

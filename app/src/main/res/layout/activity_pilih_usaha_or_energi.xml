@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PilihUsahaOrEnergi">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bckgrndfoundation"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linCover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/background"
+
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txtJudul"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="casual"
+                        android:text="BAB 3 \nUsaha dan Energi"
+                        android:textAlignment="center"
+                        android:textColor="#ffff"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/linBts1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.495"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:id="@+id/linBts1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtJudul">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                app:cardBackgroundColor="#33e4ff"
+                                app:cardCornerRadius="40dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:onClick="hitungUsaha"
+                                >
+
+                                <LinearLayout
+                                    android:id="@+id/linMenuPadat"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/imageView6"
+                                        android:layout_width="10dp"
+                                        android:layout_height="90dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_margin="10dp"
+                                        android:layout_weight="1"
+                                        app:srcCompat="@drawable/work" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginRight="25dp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/textView1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_vertical"
+                                            android:layout_weight="1"
+                                            android:fontFamily="sans-serif-medium"
+                                            android:text="Usaha"
+                                            android:textColor="#fff"
+                                            android:textSize="30dp"
+                                            android:textStyle="normal" />
+
+                                        <TextView
+                                            android:id="@+id/textView2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="Work"
+                                            android:textColor="#fff"
+                                            android:textSize="20dp"
+                                            android:textStyle="italic" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardView2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:focusable="true"
+                                app:cardBackgroundColor="#ffba3b"
+                                app:cardCornerRadius="40dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/cardView"
+                                android:onClick="hitungPotensial"
+
+                                >
+
+                                <LinearLayout
+                                    android:id="@+id/linMenu1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/imageView2"
+                                        android:layout_width="100dp"
+                                        android:layout_height="90dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_margin="10dp"
+                                        android:layout_weight="1"
+                                        app:srcCompat="@drawable/potensial" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginRight="20dp"
+
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/textView3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_vertical"
+                                            android:layout_weight="1"
+                                            android:fontFamily="sans-serif-medium"
+                                            android:text="Energi Potensial"
+                                            android:textColor="#fff"
+                                            android:textSize="25dp"
+                                            android:textStyle="normal" />
+
+                                        <TextView
+                                            android:id="@+id/textView4"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Potensial Energy"
+                                            android:textColor="#fff"
+                                            android:textSize="20dp"
+                                            android:textStyle="italic" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/CardView3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:focusable="true"
+                                app:cardBackgroundColor="#ec407a"
+                                app:cardCornerRadius="40dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/cardView2"
+                                android:onClick="hitungKinetik"
+                                >
+
+                                <LinearLayout
+                                    android:id="@+id/linMenu2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/imageView4"
+                                        android:layout_width="90dp"
+                                        android:layout_height="90dp"
+                                        android:layout_margin="10dp"
+                                        android:layout_weight="1"
+                                        app:srcCompat="@drawable/kinetic" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/textView5"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="sans-serif-medium"
+                                            android:text="Energi Kinetik"
+                                            android:textColor="#fff"
+                                            android:textSize="25dp"
+                                            android:textStyle="normal" />
+
+                                        <TextView
+                                            android:id="@+id/textView6"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Kinetic energry"
+                                            android:textColor="#fff"
+                                            android:textSize="20dp"
+                                            android:textStyle="italic" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/CardView4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:focusable="true"
+                                app:cardBackgroundColor="#39e600"
+                                app:cardCornerRadius="40dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/CardView3"
+                                android:onClick="hitungMekanik"
+                                >
+
+                                <LinearLayout
+                                    android:id="@+id/linMenu4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    >
+
+                                    <ImageView
+                                        android:id="@+id/imageView7"
+                                        android:layout_width="117dp"
+                                        android:layout_height="85dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_marginTop="15dp"
+                                        android:layout_marginBottom="15dp"
+                                        android:layout_weight="1"
+                                        app:srcCompat="@drawable/mecanic" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_weight="1"
+
+                                        android:layout_marginRight="20dp"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/textView12"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:fontFamily="sans-serif-medium"
+                                            android:text="Energi Mekanik"
+                                            android:textColor="#fff"
+                                            android:textSize="25dp"
+                                            android:textStyle="normal" />
+
+                                        <TextView
+                                            android:id="@+id/textView9"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:textColor="#fff"
+                                            android:textSize="20dp"
+                                            android:textStyle="italic"
+                                            android:text="Mechanic Energy" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
