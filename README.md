@@ -8,7 +8,7 @@
      a. Hitung gaya
      b. Hitung berat
    - Menu 2 (Bab Tekanan Zat)
-     a. Hitung tekanan zat padat
+     a. Hitung tekanan zat padat \n
      b. Hitung tekanan zat cair
      c. Hitung gaya apung
    - Menu 3 (Bab Usaha dan Energi)
